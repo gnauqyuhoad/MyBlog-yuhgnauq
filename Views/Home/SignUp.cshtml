@@ -1,0 +1,117 @@
+﻿@model Account
+<!doctype html>
+
+<section class="vh-100 bg-image"
+         style="background-image: url('https://mdbcdn.b-cdn.net/img/Photos/new-templates/search-box/img4.webp');">
+    <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+        <div class="container h-100">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+                    <div class="card" style="border-radius: 15px;">
+                        <div class="card-body p-4 form-singup-size">
+                            <h2 class="text-uppercase text-center mb-4">Create an account</h2>
+
+                            <form>
+
+                                <div data-mdb-input-init class="form-outline mb-2">
+                                    <input type="text" name="fullname" asp-for="FullName" required id="form3Example1cg" class="form-control form-control-lg" />
+                                    <label class="form-label" for="form3Example1cg">Your Name</label>
+                                </div>
+
+                                <div data-mdb-input-init class="form-outline mb-2">
+                                    <input type="email" name="email" required asp-for="Email" id="form3Example3cg" class="form-control form-control-lg" />
+                                    <label class="form-label" for="form3Example3cg">Email</label>
+                                </div>
+
+                                <div data-mdb-input-init class="form-outline mb-2">
+                                    <input type="text" name="username" required asp-for="Username" id="form3Example4cg" class="form-control form-control-lg" />
+                                    <label class="form-label" for="form3Example4cg">UserName</label>
+                                </div>
+
+                                <div data-mdb-input-init class="form-outline mb-2">
+                                    <input type="password" name="password" required id="form3Example4cdg" class="form-control form-control-lg" />
+                                    <label class="form-label" for="form3Example4cdg">Password</label>
+                                </div>
+
+                                <div class="d-flex justify-content-center">
+                                    <button type="submit" value="Register"
+                                        data-mdb-button-init data-mdb-ripple-init class="btn text-light btn-success btn-block btn-lg gradient-custom-4 text-body">
+                                        Register
+                                    </button>
+                                </div>
+
+                                <p class="text-center text-muted mt-4 mb-0">
+                                    Have already an account? <a href="#!"
+                                    class="fw-bold text-body"><u><a class="signup_link" asp-controller="Home" asp-action="Login">Login</a></u></a>
+                                </p>
+
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@*<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <link href="~/css/signupstyle.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- partial:index.partial.html -->
+
+    <section class="Background">
+        <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+
+        <div class="signup">
+
+            <div class="content">
+
+                <h2>Sign Up</h2>
+
+                <div class="form">
+
+                    <form asp-controller="Home" asp-action="SignUp" method="post">
+
+                        <div class="inputBox">
+                            <input type="text" name="fullname" asp-for="FullName" required> <i>Full Name</i>
+                        </div>
+
+                        <div class="inputBox">
+                            <input type="email" name="email" required asp-for="Email"><i>Email</i>
+                        </div>
+
+                        <div class="inputBox">
+                            <input type="text" name="username" required asp-for="Username"> <i>Username</i>
+                        </div>
+
+                        <div class="inputBox">
+                            <input type="password" name="password" required asp-for="Password"> <i>Password</i>
+                        </div>
+
+                        <div class="inputBox">
+                            <input type="submit" value="Register">
+                        </div>
+
+                        <a class="signup_link" asp-controller="Home" asp-action="Login">I am already a member</a>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section> <!-- partial -->
+
+</body>
+
+</html>*@
