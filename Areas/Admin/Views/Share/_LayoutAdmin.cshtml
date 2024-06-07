@@ -17,7 +17,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-nav mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-nav mb-3" style="position: fixed; top: 0; left:0; right:0; z-index: 1;">
             <div class="container">
                 <a class="navbar-brand fw-bolder text-light text-primary" asp-area="" asp-controller="Home" asp-action="Index"><span>MyBlog</span></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
@@ -26,12 +26,12 @@
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                     <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
+                        @*<li class="nav-item">
                             <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
+                        </li>*@
+                        @*<li class="nav-item">
                             <a class="nav-link text-light" asp-area="" asp-controller="About" asp-action="Resume">Resume</a>
-                        </li>
+                        </li>*@
                         @*<li class="nav-item">
                             <a class="nav-link text-light" asp-area="" asp-controller="Blog" asp-action="Index">Blog</a>
                         </li>*@

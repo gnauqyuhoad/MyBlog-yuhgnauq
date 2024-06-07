@@ -20,7 +20,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-nav box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-nav box-shadow mb-3 z-1" style="position: fixed; top: 0; left:0; right:0; z-index: 1;">
             <div class="container">
                 <a class="navbar-brand fw-bolder text-white text-primary" asp-area="" asp-controller="Home" asp-action="Index"><span>MyBlog</span></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
@@ -34,6 +34,9 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-light" asp-area="" asp-controller="About" asp-action="Resume">Resume</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" asp-area="" asp-controller="About" asp-action="Viewuser">Blog</a>
                         </li>
                         @if(User.IsInRole("Admin"))
                         {

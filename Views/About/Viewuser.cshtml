@@ -1,11 +1,9 @@
 ﻿@model IEnumerable<MyBlog.Models.Blog>
 
 @{
-    ViewData["Title"] = "Index";
-    Layout = "~/Areas/Admin/Views/Share/_LayoutAdmin.cshtml";
+    ViewData["Title"] = "Viewuser";
 }
 
-<a asp-action="Create">Create</a>
 <body class="d-flex flex-column h-100 bg-light">
     <main class="flex-shrink-0">
         <!-- Projects Section-->
@@ -26,9 +24,9 @@
                                             <h2 class="fw-bolder">@Html.DisplayFor(modelItem => item.TieuDe)</h2>
                                             <p class="text-justify">@Html.DisplayFor(modelItem => item.NoiDung)</p>
                                             <p>Tác giả: @Html.DisplayFor(modelItem => item.TacGia)</p>
-                                            <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                                            @*<a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
                                             <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                                            <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                                            <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>*@
                                         </div>
                                         @*<img class="img-fluid img-size" src="~/assets/nuichuachan.jpg" alt="..." />*@
                                     </div>
@@ -42,8 +40,7 @@
     </main>
 </body>
 
-
-@*<h1>Index</h1>
+@*<h1>Viewuser</h1>
 
 <p>
     <a asp-action="Create">Create New</a>

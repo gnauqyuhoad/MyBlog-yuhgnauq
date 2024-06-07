@@ -57,7 +57,7 @@ namespace MyBlog.Areas.Admin.Controllers
             {
                 dbContext.Blogs.Remove(postToDelete);
                 dbContext.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("Delete");
             }
             return RedirectToAction("Index");
         }
